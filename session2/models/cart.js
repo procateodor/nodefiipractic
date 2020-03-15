@@ -11,7 +11,7 @@ const cartSchema = new Schema(
       type: String
     },
     value: {
-      require: true,
+      required: true,
       type: Number
     }
   },
