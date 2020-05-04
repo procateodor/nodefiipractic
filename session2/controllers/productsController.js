@@ -99,9 +99,7 @@ const deleteProduct = async (req, res) => {
       _id: ObjectId(productId)
     });
 
-    return res.status(HttpStatusCode.NO_CONTENT).json({
-      success: true
-    });
+    return res.status(HttpStatusCode.NO_CONTENT);
   } catch (error) {
     console.error(error);
     return res.status(HttpStatusCode.INTERNAL_SERVER_ERROR).json({
